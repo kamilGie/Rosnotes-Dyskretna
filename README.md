@@ -7,66 +7,13 @@
     </picture>
 </p>
 
-<!-- Usuń ten fragment po użyciu szablonu  -->
 
 ---
 
 ## 🚀 Przeznaczenie
 
 Repozytorium to szablon umożliwiający tworzenie rozwiązań do zestawów zadań w różnych motywach.  
-Przykładowe repozytorium wykorzystujące ten szablon: [***Rosnotes Dyskretna***](https://github.com/kamilGie/Rosnotes-Dyskretna).
 
-### 🛠️ Użycie szablonu Rosnotes do zestawu zadań
-
-Użycie szablonu polega na wycięciu treści zadań, nazwaniu ich `desc_{numer zadania}.png` i umieszczeniu w folderach `Zestaw {numer zestawu} {nazwa zestawu}` w folderze [Solutions](./Solutions).
-
-<div align=center>
-  <img width="256" alt="Zrzut ekranu 2025-03-8 o 12 46 26" src="https://github.com/user-attachments/assets/6e9bba96-e9d8-4c67-84a0-b1629fe0a5ad" />
-</div>
-
-
-
-Wypełniony w ten sposób folder [Solutions](./Solutions) jest gotowy do tworzenia zeszytów oraz dalszego rozwijania projektu. Wystarczy jeszcze tylko podać nazwę przedmiotu w skrypcie [Organize/Organize.py](./Organize/Organize.py) w klasie configu i uruchomić ten skrypt.
-
-<details>
-  <summary>Ustawianie repozytorium GitHub</summary>
-
-## Automatyzacja projektu 
-
-Projekt w dużej mierze korzysta z GitHub Actions ([link do tego, co to jest](https://www.youtube.com/watch?v=eB0nUzAI7M8)). Informacje o użytych akcjach znajdują się w pliku README w katalogu [**.github/workflows**](./.github/workflows).
-
-### Ustawienie GitHub Actions dla projektu Rosnotes
-
-1. **Wygenerowanie tokena GitHub**  
-   Na początku wygeneruj token GitHub ([link jak to zrobić (30s)](https://www.youtube.com/shorts/rlO6C6dDKNs)). Token trzeba wygenerować z odpowiednimi ustawieniami.
-
-
-![image](https://github.com/user-attachments/assets/3f97956d-5dc6-4743-a4ec-718befdbacbb)
-
-
-2. **Ustawienie sekretów**  
-   Następnie, w sekretach GitHub, w ustawieniach repozytorium, w zakładce **Secrets and variables > Actions**, ustaw token oraz hasła do zeszytów, które znasz (nie trzeba podawać wszystkich, README będzie zawierać tylko te zeszyty, do których hasło zostało podane lub te, które nie zawierają hasła).
-
-![image](https://github.com/user-attachments/assets/cae16dba-e0ac-4a02-9a9c-046f5ad3d388)
-
-
-   > Wszystkie sekrety muszą być nazwane dokładnie tak samo.
-
-3. **Udzielenie zgody workflow**  
-   Na sam koniec udziel workflowowi zgody na zmiany w repozytorium. Robi się to w ustawieniach repozytorium w zakładce **Actions > General**.
-
-![image](https://github.com/user-attachments/assets/21f949f6-bb04-48bc-8c84-d6dc57fda1d8)
-
-Tak ustawiony projekt jest gotowy do testowania i dodawania zadań. Każde nowe zadanie będzie automatycznie dodawane do linków w wydaniach (releases) oraz do README, a także do mechanizmu testowania.
-
-> **Uwaga:** Projekt posiada workflow, który aktualizuje każdy projekt Rosnotes utworzony na podstawie szablonu. Dzięki temu mogę pracować tylko na repozytorium głównym, a zmiany są codziennie o 24:00 synchronizowane z każdym repozytorium potomnym Rosnotes. Prowadzi to jednak do sytuacji, w której **edycja** plików w repozytoriach potomnych skutkuje przywracaniem ich pierwotnej zawartości, chyba że wykluczymy dany plik z mechanizmu aktualizacji, dodając go do listy plików wykluczonych w [**.github/workflows/exclude-list.txt**](./.github/workflows/exclude-list.txt). Należy jednak pamiętać, że wykluczenie pliku spowoduje, że nie będzie on wspierany przez zmiany w głównym repozytorium Rosnotes.
-
-
-</details>
-
----
-
-<!--  Usuń ten fragment po użyciu szablonu   -->
 
 
 ### 🔧 Używanie Projektu
@@ -80,7 +27,6 @@ Projekt składa się z **4 głównych folderów**:
 4. [**`github/workflow`**](./.github/workflows) - aktualizacja [Release](./releases/tag/Notebooks) po każdej zmianie, zapewniając, że zeszyty w `Notebooks` są aktualne.
 
 
----
 
 ### 📓 Zawartość zeszytów
 
