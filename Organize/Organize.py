@@ -10,7 +10,7 @@ class Config:
     # Notebook settings
 
     # Nazwa przedmiotu
-    NOTEBOOK_NAME = "Matematyka Dyskretna"  # Ustaw tu nazwe przedmiotu
+    NOTEBOOK_NAME = "Nazwa przedmiotu"  # Ustaw tu nazwe przedmiotu
 
     THEMES = [
         "Black",
